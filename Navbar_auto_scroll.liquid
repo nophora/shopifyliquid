@@ -1,0 +1,68 @@
+<style>
+    .scrollwrap{
+      display: flex;
+       width: 100%;
+      height: 25px;
+      overflow: hidden;
+      background-color: rgb(0, 0, 0);
+      white-space: nowrap;
+    }
+
+    .announcement-slide{
+        display: flex;
+        align-items: center;
+      width: min-content;
+      height: 25px;
+      background-color: rgb(0, 0, 0);
+      animation: 5s slide infinite linear;
+    }
+
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+
+    .announcement{
+        font-size: 15px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(255, 255, 255);
+        margin: 0 30px;
+    }
+
+    .scrollwrapH{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    rotate:-4deg;
+      border-radius: 0px;
+      
+    }
+</style>
+
+
+<div class="scrollwrap">
+   
+ <div class="announcement-slide">
+<h1 class="announcement">30 DAY GUARANTEE</h1>
+<h1 class="announcement">SAVE 20% OF YOUR SALE</h1>
+<h1 class="announcement">FREE SHIPPING</h1>
+ </div>
+ <div class="announcement-slide">
+    <h1 class="announcement">30 DAY GUARANTEE</h1>
+    <h1 class="announcement">SAVE 20% OF YOUR SALE</h1>
+    <h1 class="announcement">FREE SHIPPING</h1>
+     </div>
+     <div class="announcement-slide">
+        <h1 class="announcement">30 DAY GUARANTEE</h1>
+        <h1 class="announcement">SAVE 20% OF YOUR SALE</h1>
+        <h1 class="announcement">FREE SHIPPING</h1>
+         </div>
+
+
+</div>
