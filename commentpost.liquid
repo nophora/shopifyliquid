@@ -1,0 +1,125 @@
+<style>
+    .commentswrap{
+      display: flex;
+      width: 100%;
+      height: max-content;
+      flex-wrap: wrap;
+      justify-content: center;
+      min-height: 508px;
+     
+      background-color: rgba(236, 0, 0, 0);
+    }
+.commentdiv{
+      display: flex;
+      align-items: flex-start;
+      width: 360px;
+      height: 170px;
+      border-radius: 8px;
+      box-shadow: 0px 1px 4px 0.5px rgba(0, 0, 0, 0.612);
+      background-color: rgb(255, 255, 255);
+      margin: 19px 2%;
+    }    
+
+    .commentdiv1{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 8px;
+      margin-left: 8px;
+      width: 65%;
+      height: 150px;
+      background-color: rgba(123, 255, 41, 0);
+    }   
+    .commentdivtext{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      align-items: center;
+      background-color: rgba(255, 145, 1, 0);
+    }
+
+    .commenttext{
+        font-size: 14px; 
+        font-weight: bold;
+        font-family: "Jost", sans-serif;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(24, 24, 24);
+        
+    }
+    .commentdate{
+        margin-top: -2.5px;
+        font-size: 12px; 
+        font-weight: bold;
+        font-family: "Jost", sans-serif;
+        background-color: rgba(107, 107, 107, 0);
+        color: rgb(107, 107, 107);
+        
+    }
+    .commentgraph{
+        margin-top: 9px;
+        font-size: 13.2px; 
+        font-weight: bold;
+        font-family: "Jost", sans-serif;
+        background-color: rgba(107, 107, 107, 0);
+        color: rgb(17, 17, 17);
+        
+    }
+    .commentreview{
+      margin-top: 8px;
+      margin-left: 3.5%;
+      width: 90px;
+      height: max-content;
+      border-radius: 5px;
+    }
+    .verfy{
+        margin-left: 5.5%;
+      width: 70px;
+      height: max-content;
+    }
+
+    .commentstars{
+        margin-top: -9px;
+        margin-left: -4px;
+      width: 70px;
+      height: max-content;
+    }
+
+</style>
+
+
+
+<div id="commentswrap" class="commentswrap">
+   
+    
+
+    </div>
+
+<script>
+
+let comments=[
+    {name:'Alexandru C.',date:'4/24/2024',comment:`I'm delighted to say that I wasn't put into delivering and the product itself.`,pic:`https://res.cloudinary.com/platformtour/image/upload/v1715331530/black_ziz0dr.jpg`},
+    {name:'Cindy Roxanne M.',date:'1/19/2024',comment:`Christmas gift (2024) and was shipped back, however, Kate was super helpful😍.`,pic:`https://res.cloudinary.com/platformtour/image/upload/v1715331530/red_dsgljr.jpg`},
+    {name:'Juan D.',date:'11/07/2023',comment:`Original delivery was never delivered and this caused tremendous disappointment as it.`,pic:`https://res.cloudinary.com/platformtour/image/upload/v1715331530/black_ziz0dr.jpg`},
+    {name:'Cavalié J.',date:'2/18/2024',comment:`My son is extremely impressed as he is a Nissan enthusiast and does drifting for a hobby.`,pic:`https://res.cloudinary.com/platformtour/image/upload/v1715332836/photo_2024-05-01_18-22-04_p6gqwk.jpg`},
+    {name:'Nathan H.',date:'5/02/2024',comment:`i love it.. nice dress 👍🏻.`,pic:`https://res.cloudinary.com/platformtour/image/upload/v1715332854/photo_2024-05-01_18-22-28_adclnh.jpg`},]
+
+for(let review of comments){
+   //console.log('review',review)
+   document.getElementById('commentswrap').innerHTML +=`<div class="commentdiv">
+    <div class="commentdiv1">
+        <div class="commentdivtext">
+            <h1 class="commenttext">${review.name}</h1>
+            <img src="https://res.cloudinary.com/platformtour/image/upload/v1715333470/verify_ffxcqi.jpg" alt="comment-review" class="verfy" >
+        </div>
+        <p class="commentdate">${review.date}</p>
+        <img src="https://res.cloudinary.com/platformtour/image/upload/v1715275184/reviewnub_jzqwm7.jpg" alt="comment-review" class="commentstars" >
+        <p class="commentgraph">${review.comment}</p>
+    </div>
+    <img src=${review.pic} alt="comment-review" class="commentreview" >
+   </div>
+</div>`
+}
+
+
+</script>
