@@ -1,0 +1,865 @@
+<style>
+ @media screen and (max-width: 700px) {
+
+     .wraperdiv{
+ width: 100%!important;
+      }
+ .wraperdivA{
+       width: 100%!important;
+     }
+     .wraperdivline{
+        width: 100%!important;
+     }
+.wraperdiv1{
+ width: 90%!important
+}
+.savepercents1{
+  width: 100%!important;
+ background-color: rgba(255, 0, 0, 0)!important;
+}
+.savepercents1b{
+       width: 200px!important;
+     }
+     .savepercents1c{
+       margin-top:-10px!important;
+     }
+ .wraperdiv2{
+       width: 90%!important
+     }
+
+   }
+
+
+    .wraperdiv{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 270px;
+      height: max-content;
+      min-height: 270px;
+      border-radius: 0px;
+      background-color: rgba(255, 0, 0, 0);
+    }
+    .word{
+      margin-top: -8px;
+      position: relative;
+        font-size: 11px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+    .wraperdivline{
+      margin-top: 15px;
+      width: 260px;
+      height: 3px;
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.945);
+    }
+    .wraperdivA{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      margin-top: 5px;
+      width: 260px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+    
+    .wraperdiv1{
+      margin-top: 5px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 260px;
+      height: 70px;
+      border-radius: 6px;
+      border: 3px solid black;
+      background-color: rgba(21, 255, 0, 0);
+    }
+
+    .savepercents1{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 253px;
+      height: 50px;
+      background-color: rgba(0, 255, 255, 0);
+}
+.savepercents1a{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+      height: 45px;
+      background-color: rgba(72, 0, 255, 0);
+}
+.savepercents1a1{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+      height: 15px;
+      border-radius:20px ;
+      border: 2px solid black;
+      background-color: rgba(0, 0, 0, 0);
+}
+.savepercents1a2{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.35px;
+    margin-top: 0.993px;
+    width: 9px;
+    height: 9px;
+    border-radius:20px ;
+    background-color: rgb(0, 0, 0);
+}
+.savepercents1b{
+      display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 170px;
+      height: 45px;
+      background-color: rgba(255, 234, 0, 0);
+}
+.offress1{
+  margin-top: 5px; 
+  margin-left: 5px;
+  font-size: 13.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(204, 10, 10, 0);
+        color: rgb(0, 0, 0);
+}
+.offress2{
+  font-size: 11.5px;
+  margin-top: -3px; 
+  margin-left: 5px;
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(204, 10, 10, 0);
+        color: black;
+}
+.savepercents1c{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    width: 50px;
+      height: 45px;
+      background-color: rgba(255, 234, 0, 0);
+}
+.bdlepcompare1{
+  font-size: 13.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(204, 10, 10, 0);
+        color: rgb(0, 0, 0);
+}
+.bdlepcompare2{
+  margin-top: -3px;
+  font-size: 11.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(16, 13, 179, 0);
+        color: rgb(0, 0, 0);
+        text-decoration: line-through;
+}
+
+.savepercents2{
+  position: absolute;
+  margin-top: 54px;
+  margin-left: 0px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+      height: 25px;
+      rotate:-4deg;
+      border-radius: 0px;
+      background-color: rgb(0, 0, 0);
+}
+.persentword{
+  font-size: 11.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+   
+}
+
+.variantform{
+  margin-top:10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 253px;
+      height: 200px;
+      background-color: rgba(255, 255, 0, 0);
+
+}
+.variantform1{
+  margin-top:1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 253px;
+      height: 55px;
+      background-color: rgba(0, 0, 255, 0);
+
+}
+
+.varianttext{
+  margin-top: -0px;
+  margin-left: 7px;
+      font-size: 13.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(0, 0, 0);
+
+}
+.variantwrap{
+  margin-top:1px;
+    display: flex;
+    align-items: center;
+   justify-content: flex-start;
+    width: 253px;
+      height: 55px;
+      background-color: rgba(0, 234, 255, 0);
+
+}
+.varianttexts{
+  margin-top: 13px;
+  margin-left: 0px;
+      font-size: 11.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(0, 0, 0);
+
+}
+.variantwrap1{
+  margin-left: 3px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    width: 50px;
+    height: 23px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius:25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.variantwrap1:hover{
+background-color: black;
+}
+
+.variantwrap1:hover .varianttexts{
+  color: white;
+}
+.variantform2{
+  margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 253px;
+      height: 55px;
+      background-color: rgba(0, 0, 255, 0);
+
+}
+
+    .wraperdiv2{
+      margin-top: 25px;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 260px;
+      height: 70px;
+      border-radius: 6px;
+      border: 3px solid black;
+      background-color: rgba(21, 255, 0, 0);
+   
+     }
+    .wraperdiv3{
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      background-color: black;
+      border: 2px solid black;
+    }
+
+    .wraperdiv3:hover{
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .addoffer1{
+      font-size: 12.5px; 
+      margin-left: 2px;
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+}
+
+  .addoffer1x{
+      font-size: 8.5px; 
+      margin-left: 2px;
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgba(137, 43, 226, 0);
+}
+
+.wraperdiv3:hover  .addoffer1{
+  color: rgb(0, 0, 0);
+}
+
+    .addoffer2{
+      margin-left: 3px;
+      font-size: 9.5px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+ }
+ .wraperdiv3:hover  .addoffer2{
+  color: rgb(0, 0, 0);
+}
+.spase{
+    
+     width: 100px;
+     height: 20px;
+     background-color: rgba(137, 43, 226, 0);
+}
+
+  .quanty-div{
+      margin-top:10px;
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 240px;
+      height: 57px;
+      background-color:  rgba(21, 255, 0, 0);
+  }
+  .quanty-wrap{
+    margin-top:-14px;
+   display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 80px;
+      height: 30px;
+      border-radius: 30px;
+      border:2px solid black;
+     background-color: rgba(21, 255, 0, 0);
+  }
+  .quanty-negtv{
+     margin-left: 3px;
+      font-size: 20px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+        cursor: pointer;
+  }
+  .quanty-add{
+    cursor: pointer;
+     margin-left: -2px;
+      font-size: 14px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+  }
+  .quanty-text{
+      font-size: 10px; 
+        font-weight: bold;
+        font-family:Gothampro,sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        color: black;
+  }
+
+
+   </style>
+
+
+<div class="wraperdiv">
+
+      <div class="wraperdivA">
+        <div class="wraperdivline"><h1 class="addoffer1x">+</h1></div>
+        <h1 class="word">SPECIAL OFFER FOR YOU</h1>
+      </div>
+
+
+  
+  {% assign homepage_collection = collections["frontpage"] %}
+    {% if homepage_collection.products.size > 0 %}
+  {% for product in homepage_collection.products %}
+    {% if  product.title == "Mozision Strapless bundles" %}
+ 
+   <div id="wraperdiv1" class="wraperdiv1">
+    <div class="savepercents1">
+
+      <div class="savepercents1a">
+        <div class="savepercents1a1">
+          <div class="savepercents1a2"><h1 id='product1' class="addoffer1x">{{ product.handle }}</h1></div>
+        </div>
+      </div>
+
+      <div class="savepercents1b">
+        <h1 id="offress1" class="offress1">BUY 1 & SAVE</h1>
+        <h1 class="offress2">+ FREE SHIPPING</h1>
+      </div>
+
+      <div class="savepercents1c">
+        <h1 class="bdlepcompare1">$46.80</h1>
+        <h1 class="bdlepcompare2">$70.00</h1>
+      </div>
+    </div>
+    <div id="variantform" class="variantform">
+      <div id="variantform1" class="variantform1">
+        <p class="varianttext">Color</p>
+        <div class="variantwrap">
+          <div id='colorDropdown-nb' class="variantwrap1">
+            <p id='colorDropdown-nb-text' class="varianttexts">Black</p>
+          </div>
+          <div id='colorDropdown-nr' class="variantwrap1">
+            <p id='colorDropdown-nr-text'class="varianttexts">Red</p>
+          </div>
+          
+        </div>
+      </div>
+      <div id="variantform2" class="variantform2">
+        <p class="varianttext">Size</p>
+        <div class="variantwrap">
+          <div id='sizeDropdown-ns' class="variantwrap1">
+            <p id='sizeDropdown-ns-text' class="varianttexts">S</p>
+          </div>
+          <div id='sizeDropdown-nm' class="variantwrap1">
+            <p id='sizeDropdown-nm-text' class="varianttexts">M</p>
+          </div>
+          <div id='sizeDropdown-nl' class="variantwrap1">
+            <p id='sizeDropdown-nl-text' class="varianttexts">L</p>
+          </div>
+        </div>
+      </div>
+      
+<div class="quanty-div">
+  <p class="varianttext">Quantity</p>
+  <div class="quanty-wrap">
+  <h1 id="quanty-negtv" class="quanty-negtv">-</h1>
+  <p id="quanty-text" class="quanty-text">1</p>
+  <h1 id="quanty-add" class="quanty-add">+</h1>
+   </div>
+</div>
+
+      <div id="wraperdiv3" class="wraperdiv3"><h1 id="mynexts1" class="addoffer1">+</h1><h1 id="nexts1" class="addoffer2">TAKE OFFER</h1></div>
+
+    </div>
+    <div id="savepercents2" class="savepercents2"><p class="persentword">Most Popular</p></div>
+   </div>
+
+   {% endif %}
+  {% endfor %}
+{% else %}
+  <p>No products found in the homepage collection.</p>
+{% endif %}
+
+       {% assign homepage_collection = collections["frontpage"] %}
+    {% if homepage_collection.products.size > 0 %}
+  {% for product in homepage_collection.products %}
+    {% if  product.title == "Mozision Strapless bundles" %}
+ 
+   <div id="wraperdiv2" class="wraperdiv2">
+    <div class="savepercents1">
+
+      <div class="savepercents1a">
+        <div class="savepercents1a1">
+          <div class="savepercents1a2"><h1 id='product2' class="addoffer1x">{{ product.handle }}</h1></div>
+        </div>
+      </div>
+
+      <div class="savepercents1b">
+        <h1 class="offress1">BUY 2 & SAVE (20%)</h1>
+        <h1 class="offress2">+ FREE SHIPPING</h1>
+      </div>
+
+      <div class="savepercents1c">
+        <h1 id="bdlepcompare1" class="bdlepcompare1">$80.50</h1>
+        <h1 class="bdlepcompare2">$161.99</h1>
+      </div>
+    </div>
+
+    <div id="variantformx" class="variantform">
+      <div id="variantform1" class="variantform1">
+        <p class="varianttext">Color</p>
+        <div class="variantwrap">
+          <div id='colorDropdown-xb' class="variantwrap1">
+            <p id='colorDropdown-xb-text' class="varianttexts">Black</p>
+          </div>
+          <div id='colorDropdown-xr' class="variantwrap1">
+            <p id='colorDropdown-xr-text' class="varianttexts">Red</p>
+          </div>
+         
+        </div>
+      </div>
+      <div id="variantform2" class="variantform2">
+        <p class="varianttext">Size</p>
+        <div class="variantwrap">
+          <div id='sizeDropdown-xs' class="variantwrap1">
+            <p id='sizeDropdown-xs-text' class="varianttexts">S</p>
+          </div>
+          <div id='sizeDropdown-xm' class="variantwrap1">
+            <p id='sizeDropdown-xm-text' class="varianttexts">M</p>
+          </div>
+          <div id='sizeDropdown-xl' class="variantwrap1">
+            <p id='sizeDropdown-xl-text' class="varianttexts">L</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="wraperdiv3x" class="wraperdiv3"><h1 id="mynexts2" class="addoffer1">+</h1><h1 id="nexts2" class="addoffer2">Next</h1></div>
+
+    </div>
+
+   </div>
+{% endif %}
+  {% endfor %}
+{% else %}
+  <p>No products found in the homepage collection.</p>
+{% endif %}
+
+  
+ <div class="spase"><h1 class="addoffer1x">+</h1></div>
+    </div>
+  
+
+    
+
+    <script>
+
+      let nexts=0
+      let arraydatar=[]
+
+const fisrtbundle=async(type,productId,color,size,quantity)=>{
+
+   let  productVariants=""
+
+   console.log('firstbundle-funtion',productId,color,size,quantity)
+ 
+  await fetch(`${window.Shopify.routes.root}products/${productId}.js`) // Replace '1234567890' with the actual product ID
+    .then(response => response.json())
+    .then(data => {
+      console.log('products',data)
+        // Parse variant information and populate productVariants array
+       productVariants = data.variants.map(variant => ({
+            id: variant.id,
+            size: variant.option1,
+            color: variant.option2,
+            // Add more properties as needed
+        }));
+      
+    })
+    .catch(error => {
+        console.error('Error fetching product information:', error);
+    });
+  
+console.log('Variant',productVariants)
+    // Find the matching variant based on selected size and color
+    const selectedVariant = productVariants.find(variant => variant.size === size && variant.color === color);
+
+  console.log('selectedVariant',selectedVariant)
+    if (!selectedVariant) {
+        console.error('Selected variant not found.');
+    }
+  else{
+
+ if(type==="second"){
+      arraydatar=[...arraydatar,...[{id: selectedVariant.id,quantity: quantity}]]
+      nexts=nexts+1
+    }
+    
+   
+    let formData = {
+            items: [{
+                     id: selectedVariant.id,
+                     quantity: quantity
+                    }]
+};
+    
+ let saveformData = {
+            items: arraydatar
+};
+     const cartresponse = await fetch(`${window.Shopify.routes.root}cart/clear.js`, {
+        method: 'POST',
+       headers: {
+                'Content-Type': 'application/json'
+          },
+    })
+
+        const cleardata = await cartresponse.json();
+        console.log('cleardata',cleardata)
+       
+      
+    console.log('saveformData',saveformData)
+    console.log('nexts',nexts)
+    if(type==="second"&&nexts===2||type==='first'){
+   try {
+        const response = await fetch(`${window.Shopify.routes.root}cart/add.js`, {
+        method: 'POST',
+       headers: {
+                'Content-Type': 'application/json'
+          },
+        body: JSON.stringify(type==="second"?saveformData:formData)
+    })
+
+        const data = await response.json();
+       console.log('Item added to cart:',typeof data.items[0]);
+      console.log('Item added to cart:', data);
+
+     if(typeof data.items[0]=== 'object'){
+       window.location.href = '/checkout'
+     }   
+      } catch (error) {
+        console.error('Error adding item to cart:', error);
+    }
+    }
+ 
+    
+  }    
+}
+
+    let Size="none"
+    let Color="none"
+   
+     
+   const sizeDropdownns = document.getElementById('sizeDropdown-ns')
+         sizeDropdownns.addEventListener('click',()=>{
+           Size="S"
+         document.getElementById('sizeDropdown-ns').style.backgroundColor='black'
+         document.getElementById('sizeDropdown-nm').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-nl').style.backgroundColor='rgba(255, 255, 255, 0)'
+
+          document.getElementById('sizeDropdown-ns-text').style.color='white'
+         document.getElementById('sizeDropdown-nm-text').style.color='black'
+         document.getElementById('sizeDropdown-nl-text').style.color='black'
+         });
+   const sizeDropdownnm = document.getElementById('sizeDropdown-nm')
+         sizeDropdownnm.addEventListener('click',()=>{
+           Size="M"
+          document.getElementById('sizeDropdown-ns').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-nm').style.backgroundColor='black'
+         document.getElementById('sizeDropdown-nl').style.backgroundColor='rgba(255, 255, 255, 0)'
+
+          document.getElementById('sizeDropdown-ns-text').style.color='black'
+         document.getElementById('sizeDropdown-nm-text').style.color='white'
+         document.getElementById('sizeDropdown-nl-text').style.color='black'
+         });
+
+      
+   const sizeDropdownnl = document.getElementById('sizeDropdown-nl')
+         sizeDropdownnl.addEventListener('click',()=>{
+           Size="L"
+           document.getElementById('sizeDropdown-ns').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-nm').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-nl').style.backgroundColor='black'
+
+          document.getElementById('sizeDropdown-ns-text').style.color='black'
+         document.getElementById('sizeDropdown-nm-text').style.color='black'
+         document.getElementById('sizeDropdown-nl-text').style.color='white'
+         });
+      
+   const colorDropdownnb = document.getElementById('colorDropdown-nb')
+         colorDropdownnb.addEventListener('click',()=>{
+           Color="Black"
+         document.getElementById('colorDropdown-nb').style.backgroundColor='black'
+         document.getElementById('colorDropdown-nr').style.backgroundColor='rgba(255, 255, 255, 0)'
+        
+         document.getElementById('colorDropdown-nb-text').style.color='white'
+         document.getElementById('colorDropdown-nr-text').style.color='black'
+        
+         });
+   const colorDropdownnr = document.getElementById('colorDropdown-nr')
+         colorDropdownnr.addEventListener('click',()=>{
+           Color="Red"
+          document.getElementById('colorDropdown-nb').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('colorDropdown-nr').style.backgroundColor='black'
+        
+         document.getElementById('colorDropdown-nb-text').style.color='black'
+         document.getElementById('colorDropdown-nr-text').style.color='white'
+         });
+
+      //SECOND OFFER SAVA 20%
+
+      const sizeDropdownxs = document.getElementById('sizeDropdown-xs')
+         sizeDropdownxs.addEventListener('click',()=>{
+           Size="S"
+         document.getElementById('sizeDropdown-xs').style.backgroundColor='black'
+         document.getElementById('sizeDropdown-xm').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xl').style.backgroundColor='rgba(255, 255, 255, 0)'
+
+          document.getElementById('sizeDropdown-xs-text').style.color='white'
+         document.getElementById('sizeDropdown-xm-text').style.color='black'
+         document.getElementById('sizeDropdown-xl-text').style.color='black'
+         });
+   const sizeDropdownxm = document.getElementById('sizeDropdown-xm')
+         sizeDropdownxm.addEventListener('click',()=>{
+           Size="M"
+          document.getElementById('sizeDropdown-xs').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xm').style.backgroundColor='black'
+         document.getElementById('sizeDropdown-xl').style.backgroundColor='rgba(255, 255, 255, 0)'
+
+          document.getElementById('sizeDropdown-xs-text').style.color='black'
+         document.getElementById('sizeDropdown-xm-text').style.color='white'
+         document.getElementById('sizeDropdown-xl-text').style.color='black'
+         });
+
+      
+   const sizeDropdownxl = document.getElementById('sizeDropdown-xl')
+         sizeDropdownxl.addEventListener('click',()=>{
+           Size="L"
+           document.getElementById('sizeDropdown-xs').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xm').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xl').style.backgroundColor='black'
+
+          document.getElementById('sizeDropdown-xs-text').style.color='black'
+         document.getElementById('sizeDropdown-xm-text').style.color='black'
+         document.getElementById('sizeDropdown-xl-text').style.color='white'
+         });
+
+       const colorDropdownxb = document.getElementById('colorDropdown-xb')
+         colorDropdownxb.addEventListener('click',()=>{
+           Color="Black"
+         document.getElementById('colorDropdown-xb').style.backgroundColor='black'
+         document.getElementById('colorDropdown-xr').style.backgroundColor='rgba(255, 255, 255, 0)'
+        
+         document.getElementById('colorDropdown-xb-text').style.color='white'
+         document.getElementById('colorDropdown-xr-text').style.color='black'
+        
+         });
+   const colorDropdownxr = document.getElementById('colorDropdown-xr')
+         colorDropdownxr.addEventListener('click',()=>{
+           Color="Red"
+          document.getElementById('colorDropdown-xb').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('colorDropdown-xr').style.backgroundColor='black'
+        
+         document.getElementById('colorDropdown-xb-text').style.color='black'
+         document.getElementById('colorDropdown-xr-text').style.color='white'
+         });
+  
+  
+  /* document.getElementById('sizeDropdown-xs').addEventListener('click',()=>{Size="S"});
+   document.getElementById('sizeDropdown-xm').addEventListener('click',()=>{Size="M"});
+   document.getElementById('sizeDropdown-x').addEventListener('click',()=>{Size="L"});
+      
+   document.getElementById('colorDropdown-xb').addEventListener('click',()=>{Color="Black"});
+   document.getElementById('colorDropdown-xr').addEventListener('click',()=>{Color="Red"});
+*/
+      
+ console.log('run-test')
+  const InstantBuy=(type)=>{
+    
+    // Function to handle the "Instant Buy" button click
+    // Get selected size and color
+    console.log('instantbuy-function',typeof parseInt(document.getElementById('quanty-text').innerText))
+    if(type==='first'&&Size!=="none"&&Color!=="none"&&parseInt(document.getElementById('quanty-text').innerText)>0){
+    fisrtbundle(type,document.getElementById('product1').innerText,Color,Size,parseInt(document.getElementById('quanty-text').innerText))
+    }
+    else if(type==="second"&&Size!=="none"&&Color!=="none"){
+            document.getElementById("mynexts2").style.display='flex'
+            document.getElementById("nexts2").innerText='TAKE OFFER'
+
+         document.getElementById('colorDropdown-xb').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('colorDropdown-xr').style.backgroundColor='rgba(255, 255, 255, 0)'
+        
+         document.getElementById('colorDropdown-xb-text').style.color='black'
+         document.getElementById('colorDropdown-xr-text').style.color='black'
+        
+          
+         document.getElementById('sizeDropdown-xs').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xm').style.backgroundColor='rgba(255, 255, 255, 0)'
+         document.getElementById('sizeDropdown-xl').style.backgroundColor='rgba(255, 255, 255, 0)'
+
+          document.getElementById('sizeDropdown-xs-text').style.color='black'
+         document.getElementById('sizeDropdown-xm-text').style.color='black'
+         document.getElementById('sizeDropdown-xl-text').style.color='black'
+     fisrtbundle(type,document.getElementById('product2').innerText,Color,Size,1)
+    }
+    else{
+       console.log('selected variant gone wrong')
+    }
+  }
+
+
+        // Quanty an event listener to the button
+      const firstquantyBuy=document.getElementById("quanty-negtv")
+        firstquantyBuy.addEventListener('click',function(event) {
+         const manus=parseInt(document.getElementById('quanty-text').innerText)<1?1:parseInt(document.getElementById('quanty-text').innerText)-1
+         document.getElementById('quanty-text').innerText= manus
+        });
+
+      const secondquantyBuy=document.getElementById("quanty-add")
+          secondquantyBuy.addEventListener('click',function(event){ 
+            const adds=parseInt(document.getElementById('quanty-text').innerText)<1?1:parseInt(document.getElementById('quanty-text').innerText)+1
+         document.getElementById('quanty-text').innerText= adds
+        
+          });
+   
+
+      
+       // Attach an event listener to the button
+      const firstInstantBuy=document.getElementById('wraperdiv3')
+        firstInstantBuy.addEventListener('click',function(event) {InstantBuy("first") });
+
+      document.getElementById("mynexts2").style.display='none'
+      const secondInstantBuy=document.getElementById('wraperdiv3x')
+          secondInstantBuy.addEventListener('click',function(event){InstantBuy("second")});
+   
+    let divElement = document.getElementById("wraperdiv1");
+ 
+   //Add event listener for mouseover event
+    divElement.addEventListener("mouseenter", function(event) {
+       document.getElementById("wraperdiv1").style.height='280px'
+       document.getElementById("variantform").style.display='flex'
+       document.getElementById("savepercents2").style.display='none'
+  
+      });
+    divElement.addEventListener("mouseleave", function(event) {
+       document.getElementById("wraperdiv1").style.height='70px'
+       document.getElementById("variantform").style.display='none'
+       document.getElementById("savepercents2").style.display='flex'
+  
+      });
+
+      let secondElement = document.getElementById("wraperdiv2");
+ 
+ //Add event listener for mouseover event
+ secondElement.addEventListener("mouseenter", function(event) {
+     document.getElementById("wraperdiv2").style.height='280px'
+     document.getElementById("variantformx").style.display='flex'
+    });
+    secondElement.addEventListener("mouseleave", function(event) {
+     document.getElementById("wraperdiv2").style.height='70px'
+     document.getElementById("variantformx").style.display='none'
+     });
+
+ 
+
+  
+      </script>
