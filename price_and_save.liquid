@@ -55,8 +55,10 @@
 
 <div class="pricewrap">
 <h1 class="price1">{{product.price|money}}</h1><h1 class="price2">{{product.compare_at_price|money}}</h1>
-    <div class="pricewrap1">
+ {% if  product.compare_at_price %}  
+<div class="pricewrap1">
         <img  src="https://res.cloudinary.com/platformtour/image/upload/v1715906908/price-tag-svgrepo-com_ruj4os.png" alt="detail-check" class="priceimg" >
         <h1 class="price3">SAVE 20%</h1>
     </div>
+{% endif %}
 </div>
