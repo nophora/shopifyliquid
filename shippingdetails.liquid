@@ -1,0 +1,172 @@
+<style>
+    .maincollapwrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      width: 350px;
+      height:max-content;
+      background-color: rgba(0, 235, 20, 0);
+    }
+    .collapwrap{
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      width: 350px;
+      height: max-content;
+      min-height: 50px;
+      background-color: rgba(0, 24, 235, 0);
+    }
+
+    .collapwrap1{
+        display: flex;
+      align-items: center;
+      width: 350px;
+      height:40px;
+      background-color: rgba(255, 0, 217, 0);
+     border-bottom: 1px solid rgba(85, 85, 85, 0.606);
+    }
+
+    .collapimg{
+        margin-top: 0px;
+        margin-left: 5px;
+        width: 23px;
+      height:max-content;
+    }
+    .collaptext1{
+        margin-top: 5px;
+      display: flex;
+      width: 350px;
+      height:80px;
+      background-color: rgba(142, 142, 142, 0.283);
+      border-left: 3px solid rgba(0, 0, 0, 0.673);
+    }
+    .collaptext2{
+        margin-top: 5px;
+      display: flex;
+      width: 350px;
+      height:115px;
+      background-color: rgba(142, 142, 142, 0.283);
+      border-left: 3px solid rgba(0, 0, 0, 0.673);
+    }
+    .collaptype1{
+margin-top:8px;
+        font-size: 13px; 
+        font-family: "Jost", sans-serif;
+        background-color: rgba(113, 25, 25, 0);
+        color: rgba(74, 74, 74, 0.908);
+    }
+    .stabletext{
+      margin-left: 10px;
+      display: flex;
+      width: 295px;
+      height:30px;
+      background-color:  rgba(0, 235, 20, 0);
+      
+    }
+    .collapadd1{
+    margin-left: 0px;
+        font-size: 16px; 
+        font-family: "Jost", sans-serif;
+        background-color: rgba(107, 107, 107, 0);
+        color: rgba(74, 74, 74, 0.908);
+    }
+    .collapintext1{
+        margin-top: 5px;
+    margin-left: 5px;
+        font-size: 12px; 
+        font-family: "Jost", sans-serif;
+        background-color: rgba(107, 107, 107, 0);
+        color: rgba(74, 74, 74, 0.908);
+        animation: text 300ms ease-in;
+    }
+    .price3{
+
+    margin-left: 8px;
+        font-size: 13px; 
+        font-weight: bold;
+        font-family: "Jost", sans-serif;
+        background-color: rgba(107, 107, 107, 0);
+        color: rgba(197, 197, 197, 0.908);
+      
+    }
+
+    @keyframes text {
+    from {
+      transform: translateY(10px);
+    }
+   
+    to {
+     transform: translateY(0px);
+    }
+  }
+
+
+   </style>
+
+
+<div class="maincollapwrap">
+<div class="collapwrap">
+   <div id="shippingdetail" class="collapwrap1">
+        <img  src="https://res.cloudinary.com/platformtour/image/upload/v1716797696/flight-takeoff-svgrepo-com_xhbdsx.png" alt="detail-check" class="collapimg" >
+        <div class="stabletext">
+        <h1 class="collaptype1">Shipping Details</h1>
+    </div>
+        <h1 id="collapadd1" class="collapadd1">+</h1>
+    </div>
+    <div id="collaptext1" class="collaptext1"><p class="collapintext1">At EcoEstras We ship to all locations within the United States and internationally. orders are fulfilled and then shipped worldwide in average of 7-14 days.</p></div>
+</div>
+
+    <div class="collapwrap">
+       <div id="shippingdetail2" class="collapwrap1">
+            <img  src="https://res.cloudinary.com/platformtour/image/upload/v1716809268/archive-svgrepo-com_ie18b2.png" alt="detail-check" class="collapimg" >
+            <div class="stabletext">
+            <h1 class="collaptype1">Money Back & Returns</h1>
+        </div>
+            <h1 id="collapadd2" class="collapadd1">+</h1>
+        </div>
+        <div id="collaptext2" class="collaptext2"><p class="collapintext1">If there is any issues at all with your order don't hesitate to reach out to our friendly customer support team at EcoEstras@store.com We will be happy to offer you an immediate solution and insure you are left satisfied with your experience! </p></div>
+    </div>
+
+</div>
+
+<script>
+
+let shippingdetail = document.getElementById("shippingdetail");
+let shippingswitch=false
+document.getElementById("collaptext1").style.display='none'  
+   
+
+shippingdetail.addEventListener('click',()=>{
+    if(shippingswitch===false){
+    document.getElementById("collaptext1").style.display='flex'
+    document.getElementById('collapadd1').innerText= '-'
+    shippingswitch=true
+    
+}else{
+    document.getElementById("collaptext1").style.display='none'  
+    document.getElementById('collapadd1').innerText= '+'
+    shippingswitch=false
+    }
+})
+
+
+let shippingdetail2 = document.getElementById("shippingdetail2");
+let shippingswitch2=false
+document.getElementById("collaptext2").style.display='none'  
+   
+
+shippingdetail2.addEventListener('click',()=>{
+    if(shippingswitch2===false){
+    document.getElementById("collaptext2").style.display='flex'
+    document.getElementById('collapadd2').innerText= '-'
+    shippingswitch2=true
+    
+}else{
+    document.getElementById("collaptext2").style.display='none'  
+    document.getElementById('collapadd2').innerText= '+'
+    shippingswitch2=false
+    }
+})
+
+</script>
