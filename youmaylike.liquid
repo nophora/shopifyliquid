@@ -1,0 +1,386 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+@media screen and (max-width: 700px) {
+.specificatiokn{
+justify-content: center!important;
+}
+.maylikescroll::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(19, 5, 16, 0),rgba(67, 67, 67, 0))!important;
+    height: 70px!important;
+}
+}
+.maylikewrap{
+display: flex;
+flex-direction: column;
+overflow:hidden;
+width: 100%;
+height: max-content;/*400px*/
+background-color: rgba(56, 56, 255, 0);
+
+}
+
+.liketext{
+    margin-left: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    color: rgba(21, 21, 21, 0.832);
+}
+
+.maylikescroll{
+display: flex;
+width: 100%;
+height: 300px;/*300px*/
+align-items: center;
+overflow:auto;
+background-color: rgba(255, 56, 146, 0);
+scroll-snap-type:x mandatory;
+}
+
+
+.maylikescroll::-webkit-scrollbar{
+    width: 0px;
+    height: 6px;
+}
+.maylikescroll::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgba(19, 5, 16, 0),rgb(67, 67, 67));
+    height: 70px;
+}
+
+.maylikescroll .card-swiper{
+    scroll-snap-align: start;
+}
+.card-swiper{
+
+display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+height: max-content;
+background-color: rgba(255, 255, 255, 0);
+}
+ .maylikeitem {
+
+margin-left: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 160px;
+height: 290px;
+align-items: center;
+
+background-color: rgba(255, 255, 255, 0);
+
+}
+.maylikeitem1{
+display: flex;
+justify-content: flex-end;
+width: 150px;
+height: 150px;
+border-radius: 7px;
+background-image: url("https://res.cloudinary.com/platformtour/image/upload/v1717332671/clove_tirjnq.jpg"); /* The image used */
+background-color: #cccccc00; /* Used if the image is unavailable */
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* 69 11-10 Resize the background image to cover the entire container */
+box-shadow: 0px 1px 6px 0.5px rgba(0, 0, 0, 0.612);
+     
+}
+
+.maylikeitem2{
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 117px;
+background-color: rgba(255, 248, 56, 0);
+   
+}
+.ecoestras-logo{
+width: 20px;
+height: max-content;
+border-radius: 3px;
+opacity: 0.90;
+}
+.ecoestras-logo1{
+width: 20px;
+height: max-content;
+border-radius: 3px;
+opacity: 0.90;
+}
+.maylikecycle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+margin-right: 10px;
+width: 30px;
+height: 30px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: 0px 1px 6px 0.5px rgba(0, 0, 0, 0.612);
+background-color: rgba(145, 145, 145, 0.39);
+}
+
+.headimglike{
+    font-size: 14px; 
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(26, 26, 26);
+}
+.likedivtext{
+    margin-top: -10px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(2, 2, 2, 0.698);
+  font-style: normal;
+}
+
+.likedivprice{
+margin-top: -3px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+height: 30px;
+background-color: rgba(255, 116, 56, 0);
+  
+}
+.divlikeper{
+    display: flex;
+justify-content:center;
+align-items: center;
+
+margin-left: 80px;
+width: 45px;
+height: 20px;
+border: 2px solid rgba(0, 0, 0, 0.736);
+border-radius: 20px;
+background-color: rgba(47, 255, 0, 0);
+
+}
+
+.likeprice1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(2, 2, 2, 0.698);
+  font-style: normal;
+}
+
+.likeprice1x{
+    margin-top: -1px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(2, 2, 2, 0.698);
+  font-style: normal;
+}
+
+.likeprice{
+    font-size: 14px; 
+    font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(26, 26, 26);
+
+}
+/*card swiper-slide*/
+</style>
+
+<div class="maylikewrap">
+    <h1 class="liketext">You may also like</h1>
+    <!-- card swiper -->
+    <div class="maylikescroll">
+
+       <!-- card swiper -->
+       <div class="card-swiper">
+    <div class="maylikeitem">
+            <div class="maylikeitem1">
+                <div id="maylikecycle" class="maylikecycle">
+       <img id="ecoestras-logo" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_vce9u7.png" alt="logoimg" class="ecoestras-logo"/>
+       <img id="ecoestras-logo1" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_1_vv7pnb.png" alt="logoimg" class="ecoestras-logo1"/>
+    
+    </div>     
+    </div>
+            <div class="maylikeitem2">
+    <h1 class="headimglike">Silicone Gloves</h1>
+<p class="likedivtext">Game changing glove!
+    Most innovate wash</p>
+    <div class="likedivprice">
+    <h1 class="likeprice">$18</h1><div class="divlikeper"><h1 class="likeprice1">-20%</h1></div>
+</div>  
+<h1 class="likeprice1x">Estimated</h1>
+</div>
+        </div>
+    </div>
+        <!-- card swiper -->
+        
+     <!-- card swiper -->
+     <div class="card-swiper">
+        <div class="maylikeitem">
+                <div class="maylikeitem1">
+                    <div id="maylikecycle2" class="maylikecycle">
+           <img id="ecoestras-logo2" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_vce9u7.png" alt="logoimg" class="ecoestras-logo"/>
+           <img id="ecoestras-logo2s" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_1_vv7pnb.png" alt="logoimg" class="ecoestras-logo1"/>
+        
+        </div>     
+        </div>
+                <div class="maylikeitem2">
+        <h1 class="headimglike">Silicone Gloves</h1>
+    <p class="likedivtext">Game changing glove!
+        Most innovate wash</p>
+        <div class="likedivprice">
+        <h1 class="likeprice">$18</h1><div class="divlikeper"><h1 class="likeprice1">-20%</h1></div>
+    </div>  
+    <h1 class="likeprice1x">Estimated</h1>
+    </div>
+            </div>
+        </div>
+            <!-- card swiper -->
+         <!-- card swiper -->
+       <div class="card-swiper">
+        <div class="maylikeitem">
+                <div class="maylikeitem1">
+                    <div id="maylikecycle3" class="maylikecycle">
+           <img id="ecoestras-logo3" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_vce9u7.png" alt="logoimg" class="ecoestras-logo"/>
+           <img id="ecoestras-logo3s" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_1_vv7pnb.png" alt="logoimg" class="ecoestras-logo1"/>
+        
+        </div>     
+        </div>
+                <div class="maylikeitem2">
+        <h1 class="headimglike">Silicone Gloves</h1>
+    <p class="likedivtext">Game changing glove!
+        Most innovate wash</p>
+        <div class="likedivprice">
+        <h1 class="likeprice">$18</h1><div class="divlikeper"><h1 class="likeprice1">-20%</h1></div>
+    </div>  
+    <h1 class="likeprice1x">Estimated</h1>
+    </div>
+            </div>
+        </div>
+            <!-- card swiper -->
+         <!-- card swiper -->
+       <div class="card-swiper">
+        <div class="maylikeitem">
+                <div class="maylikeitem1">
+                    <div id="maylikecycle4" class="maylikecycle">
+           <img id="ecoestras-logo4" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_vce9u7.png" alt="logoimg" class="ecoestras-logo"/>
+           <img id="ecoestras-logo4s" src="https://res.cloudinary.com/platformtour/image/upload/v1717347756/heart-like-svgrepo-com_1_vv7pnb.png" alt="logoimg" class="ecoestras-logo1"/>
+        
+        </div>     
+        </div>
+                <div class="maylikeitem2">
+        <h1 class="headimglike">Silicone Gloves</h1>
+    <p class="likedivtext">Game changing glove!
+        Most innovate wash</p>
+        <div class="likedivprice">
+        <h1 class="likeprice">$18</h1><div class="divlikeper"><h1 class="likeprice1">-20%</h1></div>
+    </div>  
+    <h1 class="likeprice1x">Estimated</h1>
+    </div>
+            </div>
+        </div>
+            <!-- card swiper -->
+                    
+   
+ <!-- box-wrap -->
+
+
+    </div>
+</div>
+
+
+<script>
+
+    let hearturn=false
+
+const hearturnbutton = document.getElementById('maylikecycle')
+document.getElementById("ecoestras-logo1").style.display='none'
+
+        hearturnbutton.addEventListener('click',()=>{
+        if( hearturn===false){
+            hearturn=true
+            document.getElementById("ecoestras-logo").style.display='none'
+            document.getElementById("ecoestras-logo1").style.display='flex'
+        }else{
+            hearturn=false
+            document.getElementById("ecoestras-logo").style.display='flex'
+            document.getElementById("ecoestras-logo1").style.display='none'
+        }
+       
+        })
+
+
+        let hearturn2=false
+
+const hearturnbutton2 = document.getElementById('maylikecycle2')
+document.getElementById("ecoestras-logo2s").style.display='none'
+
+        hearturnbutton2.addEventListener('click',()=>{
+        if( hearturn2===false){
+            hearturn2=true
+            document.getElementById("ecoestras-logo2").style.display='none'
+            document.getElementById("ecoestras-logo2s").style.display='flex'
+        }else{
+            hearturn2=false
+            document.getElementById("ecoestras-logo2").style.display='flex'
+            document.getElementById("ecoestras-logo2s").style.display='none'
+        }
+       
+        })
+
+        let hearturn3=false
+
+const hearturnbutton3 = document.getElementById('maylikecycle3')
+document.getElementById("ecoestras-logo3s").style.display='none'
+
+        hearturnbutton3.addEventListener('click',()=>{
+        if( hearturn3===false){
+            hearturn3=true
+            document.getElementById("ecoestras-logo3").style.display='none'
+            document.getElementById("ecoestras-logo3s").style.display='flex'
+        }else{
+            hearturn3=false
+            document.getElementById("ecoestras-logo3").style.display='flex'
+            document.getElementById("ecoestras-logo3s").style.display='none'
+        }
+       
+        })
+
+        let hearturn4=false
+
+const hearturnbutton4 = document.getElementById('maylikecycle4')
+document.getElementById("ecoestras-logo4s").style.display='none'
+
+        hearturnbutton4.addEventListener('click',()=>{
+        if( hearturn4===false){
+            hearturn4=true
+            document.getElementById("ecoestras-logo4").style.display='none'
+            document.getElementById("ecoestras-logo4s").style.display='flex'
+        }else{
+            hearturn4=false
+            document.getElementById("ecoestras-logo4").style.display='flex'
+            document.getElementById("ecoestras-logo4s").style.display='none'
+        }
+       
+        })
+
+</script>
