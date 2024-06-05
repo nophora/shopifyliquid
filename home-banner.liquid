@@ -151,8 +151,16 @@
         <h1 class="banner-text2">Flash Deals</h1>
         <h1 class="banner-text1">Build Shoping Memories</h1>
         <h1 class="banner-text3">Soak up the sun for less Get low prices on what you love this summer, To good to miss!</h1>
-       <div class="shoper-btn">
+       <div id="shoper-btn" class="shoper-btn">
         <h1 class="banner-text2w">Shop Now</h1>
        </div>
     </div>
     </div>
+
+<script>
+const shoperbtn = document.getElementById('shoper-btn')
+shoperbtn.addEventListener('click',()=>{
+    window.location.href = '/checkout'
+})
+</script>
+
