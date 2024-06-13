@@ -1,0 +1,172 @@
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+    
+    
+    
+    @media screen and (max-width: 700px) {
+   
+
+    .btnslidewrap{
+        height: 330px!important;
+    }
+    .btnslidewrap1s{
+        height: 330px!important;
+    }
+    
+.btnslidewrap1{
+    height: 280px!important;
+}
+.btnslidewrap2{
+    height: 280px!important;
+}
+.btnslidewrap3{
+    height: 280px!important;
+}
+
+
+    }
+
+    .btnslidewrap{
+    display: flex;
+    width: 97%;
+    height: 400px;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0);
+    }
+    .btnslidewrap1s{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255, 179, 0, 0);
+    }
+
+    .btnslidewrap1{
+    cursor: pointer;
+    display: flex;
+    width: 30px;
+    height: 380px;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/platformtour/image/upload/v1717494719/Screenshot_2024-06-04_103020_z7uqji.jpg"); /* The image used */
+    background-color: #cccccc00; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* 69 11-10 Resize the background image to cover the entire container */
+    background-color: rgba(255, 0, 187, 0);
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px 0.5px rgba(0, 0, 0, 0.612);
+    transition: 600ms;
+    }
+    
+    .btnslidewrap2{
+        cursor: pointer;
+    display: flex;
+    margin-left:2% ;
+    width: 30px;
+    height: 380px;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/platformtour/image/upload/v1717494719/Screenshot_2024-06-04_103020_z7uqji.jpg"); /* The image used */
+    background-color: #cccccc00; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* 69 11-10 Resize the background image to cover the entire container */
+    background-color: rgba(255, 0, 187, 0);
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px 0.5px rgba(0, 0, 0, 0.612);
+    transition: 600ms;
+
+    }
+
+    .btnslidewrap3{
+        cursor: pointer;
+        margin-left:2% ;
+    display: flex;
+    width: 120px;
+    height: 380px;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/platformtour/image/upload/v1717494719/Screenshot_2024-06-04_103020_z7uqji.jpg"); /* The image used */
+    background-color: #cccccc00; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* 69 11-10 Resize the background image to cover the entire container */
+    background-color: rgba(174, 255, 0, 0);
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px 0.5px rgba(0, 0, 0, 0.612);
+  /*  animation: 600ms navbarsxz ease-in-out; */
+    transition: 600ms;
+}
+
+.textslidbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89%;
+    height: 30px;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+.textslidbtn1{
+    margin-left: 10px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        color: rgba(0, 0, 0, 0.971);
+  
+}
+
+    </style>
+
+    
+        <div class="btnslidewrap1s">
+            <div class="textslidbtn"><h1 class="textslidbtn1">Trending THIS Week</h1></div>
+<div class="btnslidewrap">
+
+    <div id="btnslidewrap1" class="btnslidewrap1">.</div>
+    <div id="btnslidewrap2" class="btnslidewrap2">.</div>
+    <div id="btnslidewrap3" class="btnslidewrap3">.</div>
+
+</div>
+</div>
+    
+
+<script>
+document.getElementById("btnslidewrap1").style.width=`13%`
+document.getElementById("btnslidewrap2").style.width=`13%`
+document.getElementById("btnslidewrap3").style.width=`70%`
+
+const btnslidewrap1 = document.getElementById("btnslidewrap1")
+const btnslidewrap2 = document.getElementById("btnslidewrap2")
+const btnslidewrap3 = document.getElementById("btnslidewrap3")
+
+
+btnslidewrap1.addEventListener('click',()=>{
+document.getElementById("btnslidewrap1").style.width=`70%`
+document.getElementById("btnslidewrap2").style.width=`13%`
+document.getElementById("btnslidewrap3").style.width=`13%`
+
+})
+btnslidewrap2.addEventListener('click',()=>{
+    document.getElementById("btnslidewrap1").style.width=`13%`
+document.getElementById("btnslidewrap2").style.width=`70%`
+document.getElementById("btnslidewrap3").style.width=`13%`
+
+})
+btnslidewrap3.addEventListener('click',()=>{
+    document.getElementById("btnslidewrap1").style.width=`13%`
+document.getElementById("btnslidewrap2").style.width=`13%`
+document.getElementById("btnslidewrap3").style.width=`70%`
+
+})
+
+
+</script>
