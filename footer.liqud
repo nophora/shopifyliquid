@@ -79,14 +79,60 @@
     </div>
     <div class="footerswrap2">
 <p class="ecolinks1">© 2024 EcoEstras</p>
-<p class="ecolinks">Contact Us</p>
-<p class="ecolinks">Terms Of Service</p>
-<p class="ecolinks">Shipping policy</p>
-<p class="ecolinks">Refund Policy</p>
-<p class="ecolinks">Privacy Policy</p>
-<p class="ecolinks">About Us</p>
+<p id="Contact-Us" class="ecolinks">Contact Us</p>
+<p id="TermsOfService"  class="ecolinks">Terms Of Service</p>
+<p id="Shipping-policy"  class="ecolinks">Shipping policy</p>
+<p id="Refund-Policy"  class="ecolinks">Refund Policy</p>
+<p id="Privacy-Policy"  class="ecolinks">Privacy Policy</p>
+<p id="About-Us"  class="ecolinks">About Us</p>
 
 
     </div>
 
 </div>
+
+
+<script>
+const Contactus = document.getElementById('Contact-Us')
+     
+Contactus.addEventListener('click',()=>{
+    window.location.href = `https://ecoestras.store/pages/contact`
+    
+    })
+
+    const TermsOfService = document.getElementById('TermsOfService')
+     
+    TermsOfService.addEventListener('click',()=>{
+         window.location.href = `https://ecoestras.store/pages/terms-of-service`
+         
+         })
+
+         const Shippingpolicy = document.getElementById('Shipping-policy')
+     
+         Shippingpolicy.addEventListener('click',()=>{
+         window.location.href = `https://ecoestras.store/pages/shipping-policy`
+         
+         })
+         
+         const RefundPolicy = document.getElementById('Refund-Policy')
+     
+         RefundPolicy.addEventListener('click',()=>{
+    window.location.href = `https://ecoestras.store/pages/refund-policy`
+    
+    })
+    const PrivacyPolicy = document.getElementById('Privacy-Policy')
+     
+    PrivacyPolicy.addEventListener('click',()=>{
+    window.location.href = `https://ecoestras.store/pages/privacy-policy`
+    
+    })
+    const Aboutus = document.getElementById('About-Us')
+     
+    Aboutus.addEventListener('click',()=>{
+    window.location.href = `https://ecoestras.store/pages/about-us`
+    
+    })
+  
+
+
+</script>
